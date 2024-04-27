@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Birthday Time FInder</title>
+      <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+      <!-- --------------------------clock-------------------- -->
+      <div class="digitalClock">
+            <div class="time">
+                  <div class="timeleftside">
+                        <div class="hours">00</div>
+                  </div>
+                  <div class="timerightside">
+                        <div class="rightUp">
+                              <div class="dots">:</div>
+                              <div class="minutes">00</div>
+                        </div>
+                        <div class="rightdown">
+                              <div class="pm">PM</div>
+                              <div class="seconds">00</div>
+                        </div>
+                  </div>
+            </div>
+            <div class="Date">
+                  <div class="leftside">
+                        <div class="day">Thursday ,</div>
+                  </div>
+                  <div class="bottomside">
+                        <div id="date">25 -</div>
+                  </div>
+                  <div class="rightside">
+                        <div class="rightleft">
+                              <div class="month">April -</div>
+                        </div>
+                        <div class="rightright">
+                              <div class="year">2024 </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      
+      
+      <!-- ------------------------- end -clock-------------------- -->
+      
+      <!-- --------------------- birthday finder ---------------------- -->
+      <form action="" id="form">
+            
+            <div class="div1">
+                  <input type="number" id="bdate" maxlength="2" required placeholder="12" max="31" min="1">
+                  
+                  <select name="" id="months" required>
+                        <option value="">Select <br>Month </option>
+                        <option value="1">January</option>
+                        <option value="2">Feburary</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">Octuber</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                  </select>
+                  <input type="number" id="year" maxlength="4" required placeholder="2024" min="1000" max="2050"><br>
+            </div>
+            <div class="div3">
+                  <div class="up">
+                        <div class="a">
+                              <div class="reminding remindingmonths">Remaining Months</div>
+                              <div class="reminding remindingdays">Remaining Days</div>
+                        </div>
+                        
+                        <div class="b">
+                              <div class="birthdaymonth">00</div>
+                              <div class="birthdaydate">00</div>
+                        </div>
+                        <div class="c">
+                              <div class="ageLabel">Your Age is :</div>
+                              <div class="age">00</div>
+                        </div>
+                  </div>
+                  <!-- <div class="down">
+                        <div class="reminding remindingtime ">Remaining Time</div>
+                        <div class="birthdaytime">00 00 00</div>
+                  </div> -->
+            </div>
+            <div class="div2">
+                  <button type="submit">Check</button>
+            </div>
+      </form>
+      
+      
+      <script src="./script.js"></script>
+      <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
